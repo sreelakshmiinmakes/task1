@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>FORM REQUIREMENTS</title>
+</head>
+
+<h2 ALIGN="CENTER">FORM REQUIREMENTS </h2>
+
+<form action="Welcome.html" method="post">
+<table border="0" align="center">
+<body>
+<form action="register" method="post">
+   {% csrf_token %}
+<!--<tr>-->
+<!--<td><label for="Name">id: </label></td>-->
+<!--<td><input Name="Name" maxlength="50" name="name" type="text" /></td>-->
+<!--</tr>-->
+
+<tr>
+<td><label for="name">Name: </label></td>
+<td><input id="name" maxlength="50" name="name" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="course">phone number: </label></td>
+<td><input id="course" maxlength="50" name="course" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="branch">Branch: </label></td>
+<td><input id="branch" maxlength="50" name="branch" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="rolln0">Dob: </label></td>
+<td><input id="rollno" maxlength="50" name="Account type" type="date" /></td>
+</tr>
+
+<tr>
+<td><label for="email">Email-id:</label></td>
+<td><input id="email" maxlength="50" name="email" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="username">Address:</label></td>
+<td><input id="username" maxlength="50" name="username" type="text" /></td>
+</tr>
+
+<tr>
+
+<div class="row">
+<!--      <div class="col-75">-->
+    <td> <label for="country">District</label></td>
+      </div>
+<!--      <div class="col-75">-->
+      <td><select id="country" maxlength="50" name="country" >
+
+              <option value="0">Select District:</option>
+
+          <option value="australia">wayanad</option>
+
+          <option value="canada">Thrissur</option>
+          <option value="usa">Ernakulam</option>
+           <option value="australia">Kollam</option>
+          <option value="canada">Thiruvanathapuram</option>
+          <option value="usa">Kannur</option>
+          <option value="australia">Kozhikode</option>
+          <option value="canada">Pathanamthita</option>
+          <option value="usa">kottayam</option>
+           <option value="australia">Palakad</option>
+          <option value="canada">Eduki</option>
+          <option value="usa">Malapuram</option>
+          <option value="australia">Kasarkod</option>
+        </select>
+          </td>
+
+</tr>
+
+
+        <tr>
+    <div class="row">
+<!--      <div class="col-75">-->
+    <td> <label for="branch">Branch</label></td>
+      </div>
+<!--      <div class="col-75">-->
+      <td><select id="branch" maxlength="50" name="Address" >
+              <option value="0">Select branch:</option>
+          <option value="australia">wayanad</option>
+          <option value="canada">Thrissur</option>
+          <option value="usa">Ernakulam</option>
+           <option value="australia">Kollam</option>
+          <option value="canada">Thiruvanathapuram</option>
+          <option value="usa">Kannur</option>
+          <option value="australia">Kozhikode</option>
+          <option value="canada">Pathanamthita</option>
+          <option value="usa">kottayam</option>
+           <option value="australia">Palakad</option>
+          <option value="canada">Eduki</option>
+          <option value="usa">Malapuram</option>
+          <option value="australia">Kasarkod</option>
+        </select>
+          </td>
+    </tr>
+    <tr>
+    <div class="row">
+<!--      <div class="col-75">-->
+    <td> <label for="branch">Account type</label></td>
+      </div>
+<!--      <div class="col-75">-->
+      <td><select id="branch" maxlength="50" name="country" >
+              <option value="0">Select account:</option>
+          <option value="australia">saving account</option>
+          <option value="canada">current account</option>
+          <option value="usa">salary account</option>
+
+        </select>
+          </td>
+    </tr>
+<!--<tr>-->
+
+<!--<div class="row">-->
+<!--&lt;!&ndash;      <div class="col-75">&ndash;&gt;-->
+<!--    <td> <label for="country">District</label></td>-->
+<!--      </div>-->
+<!--    <td><select id="country" maxlength="50" name="country" >-->
+<!--  <div class="dropdown">-->
+<!--    <span class="caret"></span></button>-->
+<!--    <ul class="dropdown-menu">-->
+<!--      <li><a tabindex="-1" href="#">HTML</a></li>-->
+<!--      <li><a tabindex="-1" href="#">CSS</a></li>-->
+<!--      <li class="dropdown-submenu">-->
+<!--        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>-->
+<!--        <ul class="dropdown-menu">-->
+<!--          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>-->
+<!--          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>-->
+<!--          <li class="dropdown-submenu">-->
+<!--            <a class="test" href="#">Another dropdown <span class="caret"></span></a>-->
+<!--            <ul class="dropdown-menu">-->
+<!--              <li><a href="#">3rd level dropdown</a></li>-->
+<!--              <li><a href="#">3rd level dropdown</a></li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--    </div>-->
+
+
+<td>Gender</td>
+<td>
+Male <input type="radio" name="Gender" value="Male" />
+Female <input type="radio" name="Gender" value="Female" />
+</td>
+</tr>
+    <td>Materials provide</td>
+<td>
+<input type="checkbox" checked="checked" name="remember"> Debit card
+    <input type="checkbox" checked="checked" name="remember"> Credit card
+<input type="checkbox" checked="checked" name="remember"> Cheque book
+
+</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td align="right"><input name="Submit" type="Submit" value="submit" /></td>
+
+<td align="right"><input name="Submit" type="Submit" value="logout" /></td>
+</tr>
+
+
+</body>
+</table>
+</form>
+</html>
